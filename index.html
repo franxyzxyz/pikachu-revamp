@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Pikachu Volleyball - ver.0.0</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header></header>
+    <section id="court" class="text-center center-block">
+      <div id="player1" class="halfcourt">
+<!--         <div id="p1_score" class="score">0</div>
+ -->        <img id="pika" class="fetchPosition" src="img/pokeball.png"/>
+        <img id="p1" class="fetchPosition" src="img/playerLeft.png" />
+      </div>
+      <div id="player2" class="halfcourt">
+<!--         <div id="p2_score" class="score">0</div>
+ -->        <img id="p2" class="fetchPosition" src="img/playerRight.png" />
+      </div>
+      <div id="threshold" style="top:300px,left:200px,width:400px,height:2px,background:red"></div>
+      <div id="countdown"></div>
+    </section>
+    <section id="warning">
+      <div class="text-center center-block">
+        <span class="label label-warning"><img src="img/warning.png" style="height:30px">WARNING: PLEASE DO NOT CHANGE THE WINDOW SIZE DURING THE GAME. IT MIGHT BREAK THE GAME</span>
+      </div>
+    </section>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jBeep.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/ball.js"></script>
+    <script src="js/player.js"></script>
+  </body>
+</html>
